@@ -1,0 +1,12 @@
+CRITICAL - 2023-07-02 14:46:53 --> Undefined variable $chats
+in APPPATH\Views\chat_view.php on line 4.
+ 1 APPPATH\Views\chat_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $chats', 'D:\\zulfa\\codeigniter4-framework-e392123\\app\\Views\\chat_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\zulfa\\codeigniter4-framework-e392123\\app\\Views\\chat_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('chat_view', [], true)
+ 5 APPPATH\Controllers\ChatController.php(12): view('chat_view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ChatController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')

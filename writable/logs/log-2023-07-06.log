@@ -1,0 +1,200 @@
+CRITICAL - 2023-07-06 02:30:40 --> Undefined array key "userInput"
+in APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php on line 65.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "userInput"', 'D:\\zulfa\\codeigniter4-framework-e392123\\app\\ThirdParty\\chatbot\\chatbot\\Classes\\Parser.php', 65)
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), null)
+ 3 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk(null)
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-06 02:40:52 --> DOMDocument::loadXML(): Opening and ending tag mismatch: br line 34 and template in Entity, line: 36
+in APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php on line 65.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::loadXML(): Opening and ending tag mismatch: br line 34 and template in Entity, line: 36', 'D:\\zulfa\\codeigniter4-framework-e392123\\app\\ThirdParty\\chatbot\\chatbot\\Classes\\Parser.php', 65)
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(65): DOMDocument->loadXML('<?xml version="1.0" encoding="utf-8"?>
+<aiml version="1.0">
+
+<meta name="author" content="kompasim"/>
+
+
+<!-- <category>
+    <pattern>_LAKUKAN_</pattern>
+    <template>
+        Saya adalah sistem berbasis web yang dirancang untuk memberikan bantuan dan menjawab 
+        pertanyaan dalam topik seputar administrasi perkuliahan. Dengan kemampuan yang saya miliki, 
+        saya dapat membantu dalam menjawab pertanyaan dan memberikan informasi. 
+        Saya terus belajar dan diperbarui dengan pengetahuan terbaru agar dapat memberikan informasi 
+        yang optimal kepada pengguna. Silakan berikan pertanyaan dan saya akan berusaha memberikan 
+        respon yang paling baik berdasarkan pengetahuan yang saya miliki.
+    </template>
+</category>
+
+<category>
+    <pattern>_BISA_</pattern>
+    <template>
+        <srai>_LAKUKAN_</srai>
+    </template>
+</category> -->
+
+<category>
+    <pattern>_SPTJM_</pattern>
+    <template>
+        Berikut langkah-langkah yang dapat anda lakukan untuk membuat Surat Pertanggungjawaban Magang
+        <br>
+        1. Buat surat terlebih dahulu dengan format yang sudah ditentukan. Akses template pada link https://ungu.in/SPTJM-FIK 
+        <br>
+        2. Lengkapi surat dengan Tanda tangan pembuat dan orang tua. Sertai dengan materai bernilai 10000.
+        <br>
+        3. Lakukan legalisasi oleh Dekan Fakultas anda masing-masing. 
+    </template>
+</category>
+
+<category>
+    <pattern>_SURAT REKOMENDASI MAGANG_</pattern>
+    <template>
+        Berikut cara yang dapat anda lakukan untuk mendapatkan surat rekomendasi magang 
+        1. Isi data master dulu pada link https://docs.google.com/forms/d/e/1FAIpQLSdHDYp4EBXXG-TyzsmtZh9Q57oOMGZWve-i6lZASrclZbNg_A/closedform 
+        2. Buat Proposal pengajuan dengan template yang ada pada link https://docs.google.com/document/d/1ndB2xxw2QDyZF4SVAubf5zNAJCoOepWf/view 
+        3. Isi form penyetaraan SKS magang dengan template yang ada pada link https://d3ti.amikom.ac.id/page/magang-mbkm 
+        4. Ajukan approval terhadap dosen wali. Hubungi dosen wali secara pribadi.
+        5. Ajukan approval terhadap kaprodi pada link https://d3ti.amikom.ac.id/page/approval-kaprodi 
+        6. Submit Proposal Pengajuan Magang pada link https://linktr.ee/magangd3tiamikom 
+        7. Isi data master pada link https://docs.google.com/forms/d/e/1FAIpQLSdHDYp4EBXXG-TyzsmtZh9Q57oOMGZWve-i6lZASrclZbNg_A/closedform  dan pastikan data yang diisi harus sesuai.
+        8. Kemudian anda bisa lakukan pengajuan Surat Rekomendasi Magang pada link https://fik.amikom.ac.id/page/pengajuan-surat . Cek status pengajuan surat rekomendasi anda di website Fakultas pada menu Status Pengajuan Surat
+    </template>
+</category>
+<category>
+    <pattern>_D3 TI_</pattern>
+    <pattern>_D3 TEKNIK INFORMATIKA_</pattern>
+    <template>
+        <srai>_SURAT REKOMENDASI MAGANG_</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>_PINDAH KELAS_</pattern>
+    <template>
+        Berikut adalah langkah-langkah yang harus Anda lakukan untuk melakukan perpindahan kelas secara resmi dan jelas:
+        1. Akseslah halaman website Dashboard Mahasiswa.
+        2. Pilihlah opsi Menu Perkuliahan.
+        3. Temukan dan pilihlah fitur yang bernama Pindah Kelas.
+        4. Dalam fitur tersebut, pilihlah kelas mata kuliah yang ingin Anda pindahkan.
+        5. Ubahlah opsi keterangan kelas dengan memilih opsi kelas yang diinginkan.
+    </template>
+</category>
+
+<category>
+    <pattern>_STATUS PEMBAYARAN_</pattern>
+    <template>
+        Berikut adalah langkah-langkah yang harus Anda lakukan untuk dapat mengecek status pembayaran kuliah 
+        1. Akseslah halaman website Dashboard Mahasiswa.
+        2. Pilihlah opsi Menu Pembayaran.
+        3. Temukan dan pilihlah fitur yang bernama Info Biaya Kuliah.
+        4. Pada fitur tersebut, lengkapi dengan mengisi nama Bank yang digunakan, tahun ajaran kuliah yang ingin dicari, serta semester yang ditempuh.
+    </template>
+</category>
+
+<category>
+    <pattern>_INFORMASI RPS_</pattern>
+    <template>
+        Informasi RPS bisa anda dapatkan pada website masing-masing Prodi. 
+        Berikut list link website prodi dapat anda akses.
+        1. Akuntansi
+        http://akuntansi.amikom.ac.id 
+        2. Arsitektur
+        http://arsitektur.amikom.ac.id 
+        3. Geografi
+        http://geografi.amikom.ac.id 
+        4. Ilmu Komunikasi
+        http://ilmukomunikasi.amikom.ac.id 
+        5. Informatika
+        http://informatika.amikom.ac.id 
+        6. Magister Teknik Informatika
+        http://mti.amikom.ac.id 
+        7. Perencanaan Wilayah dan kota
+        http://pwk.amikom.ac.id 
+        8. Teknik Informatika
+        http://d3ti.amikom.ac.id 
+        9. Teknologi Informasi
+        http://ti.amikom.ac.id 
+        10. Ekonomi
+        http://ekonomi.amikom.ac.id 
+        11. Hubungan Internasional
+        http://hi.amikom.ac.id 
+        12. Ilmu Pemerintahan
+        http://ilmupemerintahan.amikom.ac.id 
+        13. Kewirausahaan
+        http://kewirausahaan.amikom.ac.id 
+        14. Manajemen Informatika
+        http://d3mi.amikom.ac.id 
+        15. Sistem Informasi
+        http://si.amikom.ac.id 
+        16. Teknik Komputer
+        http://tk.amikom.ac.id 
+    </template>
+</category>
+
+<category>
+    <pattern>_NILAI SEMESTER_</pattern>
+    <template>
+        Informasi Nilai Semester terdapat pada website Dashboard Mahasiswa
+        Berikut langkah-langkah yang dapat anda lakukan untuk menemukan informasi nilai semester 2 .
+        1. Akseslah halaman website Dashboard Mahasiswa.
+        2. Pilihlah opsi Menu Rencana dan Hasil Studi.
+        3. Temukan dan pilihlah fitur yang bernama Kartu Hasil Studi.
+        4. Pada fitur tersebut, isi keterangan semester dan tahun akademik yang dicari. Lalu tekan tombol tampilkan KHS.
+        5. Akan di tampilkan keterangan Kode Mata Kuliah, Mata Kuliah, Jumlah SKS, dan Nilai.
+    </template>
+</category>
+
+<category>
+    <pattern>_ISI KRS_</pattern>
+    <template>
+        Berikut langkah-langkah yag dapat anda lakukan untuk melakukan pengisian KRS. 
+        1. Lakukan Login akun di website mhs.amikom.ac.id 
+        2. Pilihlah opsi Menu Rencana dan Hasil Studi. Temukan dan pilihlah fitur yang bernama Rencana Studi (KRS).
+        3. Pilih opsi Pengambilan KRS. Pada fitur tersebut, tekan tombol DITAWARKAN. Pastikan anda sudah memasuki jadwal pengambilan KRS.
+        4. Terdapat list mata kuliah yang dapat diambil. Ceklis untuk memilih mata kuliah dan silang untuk menghapus pilihan matakuliah.
+        5. Jika ingin melakukan Cetak KRS, anda bisa melakukannya dengan memilih fitur Cetak KRS.
+    </template>
+</category>
+
+<default>
+    <srai>DEFAULT</srai>
+</default>
+
+<category>
+    <pattern>DEFAULT</pattern>
+    <template>
+        <random>
+        <li>I didn\'t understand, what you mean ?</li>
+        <li>what the fuck are you talking about man!</li>
+        <li>sounds good, but i have no idea about it.</li>
+        <li>teach me something in aiml files.</li>
+        </random>
+    </template>
+</category>
+
+
+<!-- the uyghur aiml file, you can delete it if don\'t need -->
+
+</aiml>')
+ 3 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), 'sptjm')
+ 4 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk('sptjm')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-06 05:09:11 --> Undefined variable $chats
+in APPPATH\Views\chat_view.php on line 4.
+ 1 APPPATH\Views\chat_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $chats', 'D:\\zulfa\\codeigniter4-framework-e392123\\app\\Views\\chat_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\zulfa\\codeigniter4-framework-e392123\\app\\Views\\chat_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('chat_view', [], true)
+ 5 APPPATH\Controllers\ChatController.php(12): view('chat_view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ChatController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')

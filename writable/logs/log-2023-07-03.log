@@ -1,0 +1,417 @@
+CRITICAL - 2023-07-03 05:13:00 --> Undefined variable $chats
+in APPPATH\Views\chat_view.php on line 4.
+ 1 APPPATH\Views\chat_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $chats', 'D:\\zulfa\\codeigniter4-framework-e392123\\app\\Views\\chat_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\zulfa\\codeigniter4-framework-e392123\\app\\Views\\chat_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('chat_view', [], true)
+ 5 APPPATH\Controllers\ChatController.php(12): view('chat_view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ChatController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:14:18 --> Call to undefined method App\Controllers\TestController::get()
+in APPPATH\Controllers\TestController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:14:40 --> Undefined property: App\Controllers\TestController::$input
+in APPPATH\Controllers\TestController.php on line 11.
+ 1 APPPATH\Controllers\TestController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TestController::$input', 'D:\\zulfa\\codeigniter4-framework-e392123\\app\\Controllers\\TestController.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:15:19 --> Call to undefined method App\Controllers\TestController::getVar()
+in APPPATH\Controllers\TestController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:15:49 --> Undefined variable $request
+in APPPATH\Controllers\TestController.php on line 11.
+ 1 APPPATH\Controllers\TestController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'D:\\zulfa\\codeigniter4-framework-e392123\\app\\Controllers\\TestController.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:16:17 --> Too few arguments to function App\Controllers\TestController::index(), 0 passed in D:\zulfa\codeigniter4-framework-e392123\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\TestController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:16:47 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\TestController.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\zulfa\\codeigniter4-framework-e392123\\app\\Controllers\\TestController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TestController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TestController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\TestController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:16:53 --> Too few arguments to function App\Controllers\TestController::__construct(), 0 passed in D:\zulfa\codeigniter4-framework-e392123\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\TestController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\TestController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:17:01 --> Too few arguments to function App\Controllers\TestController::__construct(), 0 passed in D:\zulfa\codeigniter4-framework-e392123\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\TestController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\TestController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:17:03 --> Too few arguments to function App\Controllers\TestController::__construct(), 0 passed in D:\zulfa\codeigniter4-framework-e392123\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\TestController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\TestController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:20:22 --> Class "App\Controllers\Chatbot" not found
+in APPPATH\Controllers\TestController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:21:02 --> Class "ThirdParty\chatbot\chatbot\Chatbot" not found
+in APPPATH\Controllers\TestController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:21:38 --> Class "App\ThirdParty\chatbot\chatbot\Chatbot" not found
+in APPPATH\Controllers\TestController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:21:51 --> Class "App\ThirdParty\chatbot\chatbot\ChatBot" not found
+in APPPATH\Controllers\TestController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:22:24 --> Class "App\ThirdParty\chatbot\chatbot\ChatBot" not found
+in APPPATH\Controllers\TestController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:22:25 --> Class "App\ThirdParty\chatbot\chatbot\ChatBot" not found
+in APPPATH\Controllers\TestController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:22:34 --> Class "App\ThirdParty\chatbot\chatbot\Chatbot" not found
+in APPPATH\Controllers\TestController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:22:35 --> Class "App\ThirdParty\chatbot\chatbot\Chatbot" not found
+in APPPATH\Controllers\TestController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:23:23 --> Class "App\ThirdParty\chatbot\chatbot\Chatbot" not found
+in APPPATH\Controllers\TestController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:23:57 --> Undefined variable $config
+in APPPATH\Controllers\TestController.php on line 19.
+ 1 APPPATH\Controllers\TestController.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'D:\\zulfa\\codeigniter4-framework-e392123\\app\\Controllers\\TestController.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:24:54 --> Class "App\Controllers\Config" not found
+in APPPATH\Controllers\TestController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:25:17 --> Class "App\ThirdParty\chatbot\chatbot\Context" not found
+in APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php on line 28.
+ 1 APPPATH\Controllers\TestController.php(23): App\ThirdParty\chatbot\chatbot\Chatbot->__construct(Object(App\ThirdParty\chatbot\chatbot\Config), '::1')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:25:35 --> Class "App\ThirdParty\chatbot\chatbot\Context" not found
+in APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php on line 28.
+ 1 APPPATH\Controllers\TestController.php(23): App\ThirdParty\chatbot\chatbot\Chatbot->__construct(Object(App\ThirdParty\chatbot\chatbot\Config), '::1')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:27:11 --> Class "App\ThirdParty\chatbot\chatbot\Context" not found
+in APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php on line 28.
+ 1 APPPATH\Controllers\TestController.php(23): App\ThirdParty\chatbot\chatbot\Chatbot->__construct(Object(App\ThirdParty\chatbot\chatbot\Config), '::1')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:27:27 --> Class "App\ThirdParty\chatbot\chatbot\Parser" not found
+in APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php on line 31.
+ 1 APPPATH\Controllers\TestController.php(23): App\ThirdParty\chatbot\chatbot\Chatbot->__construct(Object(App\ThirdParty\chatbot\chatbot\Config), '::1')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:27:38 --> Class "App\ThirdParty\chatbot\chatbot\Connection" not found
+in APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php on line 33.
+ 1 APPPATH\Controllers\TestController.php(23): App\ThirdParty\chatbot\chatbot\Chatbot->__construct(Object(App\ThirdParty\chatbot\chatbot\Config), '::1')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:27:47 --> Class "App\ThirdParty\chatbot\chatbot\User" not found
+in APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php on line 107.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(45): App\ThirdParty\chatbot\chatbot\Chatbot->getUser('::1')
+ 2 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk('aowkeoakwe')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:28:35 --> Class "App\ThirdParty\chatbot\chatbot\Humans\Connection" not found
+in APPPATH\ThirdParty\chatbot\chatbot\Humans\Human.php on line 99.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Humans\Human.php(29): App\ThirdParty\chatbot\chatbot\Humans\Human->loadAllProps()
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Humans\User.php(11): App\ThirdParty\chatbot\chatbot\Humans\Human->__construct(Object(App\ThirdParty\chatbot\chatbot\Chatbot), '::1', 'user')
+ 3 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(108): App\ThirdParty\chatbot\chatbot\Humans\User->__construct(Object(App\ThirdParty\chatbot\chatbot\Chatbot), '::1')
+ 4 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(46): App\ThirdParty\chatbot\chatbot\Chatbot->getUser('::1')
+ 5 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk('aowkeoakwe')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:28:57 --> Class "App\ThirdParty\chatbot\chatbot\Bot" not found
+in APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php on line 95.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(48): App\ThirdParty\chatbot\chatbot\Chatbot->getBot('::1')
+ 2 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk('aowkeoakwe')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:29:17 --> App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(): Argument #1 ($user) must be of type App\ThirdParty\chatbot\chatbot\Classes\User, App\ThirdParty\chatbot\chatbot\Humans\User given, called in D:\zulfa\codeigniter4-framework-e392123\app\ThirdParty\chatbot\chatbot\Chatbot.php on line 54
+in APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php on line 44.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), 'aowkeoakwe')
+ 2 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk('aowkeoakwe')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:30:02 --> App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(): Argument #1 ($user) must be of type App\ThirdParty\chatbot\chatbot\Classes\User, App\ThirdParty\chatbot\chatbot\Humans\User given, called in D:\zulfa\codeigniter4-framework-e392123\app\ThirdParty\chatbot\chatbot\Chatbot.php on line 54
+in APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php on line 47.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), 'aowkeoakwe')
+ 2 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk('aowkeoakwe')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:30:03 --> App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(): Argument #1 ($user) must be of type App\ThirdParty\chatbot\chatbot\Classes\User, App\ThirdParty\chatbot\chatbot\Humans\User given, called in D:\zulfa\codeigniter4-framework-e392123\app\ThirdParty\chatbot\chatbot\Chatbot.php on line 54
+in APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php on line 47.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), 'aowkeoakwe')
+ 2 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk('aowkeoakwe')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:30:27 --> Undefined array key "userInput"
+in APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php on line 64.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "userInput"', 'D:\\zulfa\\codeigniter4-framework-e392123\\app\\ThirdParty\\chatbot\\chatbot\\Classes\\Parser.php', 64)
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), 'aowkeoakwe')
+ 3 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk('aowkeoakwe')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:31:08 --> AIML file not found in : aiml/chatbot.aiml
+in APPPATH\ThirdParty\chatbot\chatbot\Classes\Context.php on line 25.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(64): App\ThirdParty\chatbot\chatbot\Classes\Context::getAimlString(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), 'aowkeoakwe')
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), null)
+ 3 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk(null)
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:31:46 --> AIML file not found in : aiml/chatbot.aiml
+in APPPATH\ThirdParty\chatbot\chatbot\Classes\Context.php on line 25.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(64): App\ThirdParty\chatbot\chatbot\Classes\Context::getAimlString(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), 'aowkeoakwe')
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), null)
+ 3 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk(null)
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:32:47 --> AIML file not found in : D:\zulfa\codeigniter4-framework-e392123\app\ThirdParty/chatbot/chatbot/aiml/chatbot.aiml
+in APPPATH\ThirdParty\chatbot\chatbot\Classes\Context.php on line 26.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(64): App\ThirdParty\chatbot\chatbot\Classes\Context::getAimlString(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), 'aowkeoakwe')
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), null)
+ 3 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk(null)
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:33:21 --> Include file AIML not found in : aiml/./demo/demo.aiml
+in APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php on line 113.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(68): App\ThirdParty\chatbot\chatbot\Classes\Parser::includeMerge(Object(DOMDocument))
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), null)
+ 3 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk(null)
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+WARNING - 2023-07-03 05:33:37 --> [DEPRECATED] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php on line 865.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(865): str_replace([...], [...], null)
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(854): App\ThirdParty\chatbot\chatbot\Classes\Parser::replaceInvalidCharacter(null)
+ 3 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(71): App\ThirdParty\chatbot\chatbot\Classes\Parser::cleanUpPattern(null)
+ 4 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), null)
+ 5 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk(null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:33:37 --> App\ThirdParty\chatbot\chatbot\Classes\Parser::searchCategory(): Argument #1 ($domNode) must be of type App\ThirdParty\chatbot\chatbot\Classes\DOMElement, DOMElement given, called in D:\zulfa\codeigniter4-framework-e392123\app\ThirdParty\chatbot\chatbot\Classes\Parser.php on line 170
+in APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php on line 619.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(170): App\ThirdParty\chatbot\chatbot\Classes\Parser::searchCategory(Object(DOMElement))
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(84): App\ThirdParty\chatbot\chatbot\Classes\Parser::getResponseString('')
+ 3 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), '')
+ 4 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk(null)
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+WARNING - 2023-07-03 05:34:19 --> [DEPRECATED] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php on line 866.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(866): str_replace([...], [...], null)
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(855): App\ThirdParty\chatbot\chatbot\Classes\Parser::replaceInvalidCharacter(null)
+ 3 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(72): App\ThirdParty\chatbot\chatbot\Classes\Parser::cleanUpPattern(null)
+ 4 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), null)
+ 5 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk(null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+WARNING - 2023-07-03 05:34:19 --> [DEPRECATED] utf8_decode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php on line 140.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(140): utf8_decode(null)
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(58): App\ThirdParty\chatbot\chatbot\Chatbot->log(Object(App\ThirdParty\chatbot\chatbot\Humans\User), null, 'teach me something in aiml files.', Object(App\ThirdParty\chatbot\chatbot\Humans\Bot))
+ 3 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk(null)
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+WARNING - 2023-07-03 05:34:32 --> [DEPRECATED] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php on line 866.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(866): str_replace([...], [...], null)
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(855): App\ThirdParty\chatbot\chatbot\Classes\Parser::replaceInvalidCharacter(null)
+ 3 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(72): App\ThirdParty\chatbot\chatbot\Classes\Parser::cleanUpPattern(null)
+ 4 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), null)
+ 5 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk(null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+WARNING - 2023-07-03 05:34:32 --> [DEPRECATED] utf8_decode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php on line 140.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(140): utf8_decode(null)
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(58): App\ThirdParty\chatbot\chatbot\Chatbot->log(Object(App\ThirdParty\chatbot\chatbot\Humans\User), null, 'what the fuck are you talking about man!', Object(App\ThirdParty\chatbot\chatbot\Humans\Bot))
+ 3 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk(null)
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+WARNING - 2023-07-03 05:34:43 --> [DEPRECATED] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php on line 866.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(866): str_replace([...], [...], null)
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(855): App\ThirdParty\chatbot\chatbot\Classes\Parser::replaceInvalidCharacter(null)
+ 3 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(72): App\ThirdParty\chatbot\chatbot\Classes\Parser::cleanUpPattern(null)
+ 4 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), null)
+ 5 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk(null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+WARNING - 2023-07-03 05:34:43 --> [DEPRECATED] utf8_decode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php on line 140.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(140): utf8_decode(null)
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(58): App\ThirdParty\chatbot\chatbot\Chatbot->log(Object(App\ThirdParty\chatbot\chatbot\Humans\User), null, 'what the fuck are you talking about man!', Object(App\ThirdParty\chatbot\chatbot\Humans\Bot))
+ 3 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk(null)
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-03 05:35:01 --> Undefined array key "userInput"
+in APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php on line 65.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "userInput"', 'D:\\zulfa\\codeigniter4-framework-e392123\\app\\ThirdParty\\chatbot\\chatbot\\Classes\\Parser.php', 65)
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), 'siapa kamu')
+ 3 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk('siapa kamu')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+WARNING - 2023-07-03 05:35:04 --> [DEPRECATED] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php on line 866.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(866): str_replace([...], [...], null)
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(855): App\ThirdParty\chatbot\chatbot\Classes\Parser::replaceInvalidCharacter(null)
+ 3 APPPATH\ThirdParty\chatbot\chatbot\Classes\Parser.php(72): App\ThirdParty\chatbot\chatbot\Classes\Parser::cleanUpPattern(null)
+ 4 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(54): App\ThirdParty\chatbot\chatbot\Classes\Parser::Parse(Object(App\ThirdParty\chatbot\chatbot\Humans\User), Object(App\ThirdParty\chatbot\chatbot\Humans\Bot), null)
+ 5 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk(null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')
+WARNING - 2023-07-03 05:35:04 --> [DEPRECATED] utf8_decode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php on line 140.
+ 1 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(140): utf8_decode(null)
+ 2 APPPATH\ThirdParty\chatbot\chatbot\Chatbot.php(58): App\ThirdParty\chatbot\chatbot\Chatbot->log(Object(App\ThirdParty\chatbot\chatbot\Humans\User), null, 'sounds good, but i have no idea about it.', Object(App\ThirdParty\chatbot\chatbot\Humans\Bot))
+ 3 APPPATH\Controllers\TestController.php(26): App\ThirdParty\chatbot\chatbot\Chatbot->talk(null)
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\zulfa\\codeigniter4-framework-e392123\\public\\index.php')

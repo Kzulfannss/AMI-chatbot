@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml version="1.0">
+
+<meta name="author" content="kompasim"/>
+
+<category>
+    <pattern>HAI</pattern>
+    <template>
+        <random>
+        <li>Hallo</li>
+        <li>Hello</li>
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>HI</pattern>
+    <template>
+        <srai>HAI</srai>
+    </template>
+</category>
+
+<default>
+    <srai>DEFAULT</srai>
+</default>
+<category>
+    <pattern>DEFAULT</pattern>
+    <template>
+        <random>
+        <li>Saya tidak mengerti, bisa lebih jelas?</li>
+        <li>Pertanyaan itu belum ada dalam database saya.</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>_LAKUKAN_</pattern>
+    <template>
+        Saya adalah sistem berbasis web yang dirancang untuk memberikan bantuan dan menjawab pertanyaan dalam topik seputar administrasi perkuliahan. 
+        Silakan berikan pertanyaan dan saya akan berusaha memberikan respon yang paling baik berdasarkan pengetahuan yang saya miliki.
+        <data name="q1">
+            <attr name="text">1. Berikan saya cara untuk melakukan pindah kelas</attr>
+            <attr name="action">PINDAH KELAS</attr>
+        </data>
+        <data name="q2">
+            <attr name="text">2. Bagaimana cara cek status pembayaran kuliah</attr>
+            <attr name="action">STATUS PEMBAYARAN</attr>
+        </data>
+        <data name="q3">
+            <attr name="text">3. Bagaimana cara untuk mendapatkan surat rekomendasi magang untuk jurusan D3-Teknik Informatika</attr>
+            <attr name="action">SURAT REKOMENDASI MAGANG</attr>
+        </data>
+        <data name="q4">
+            <attr name="text">4. Dimana saya dapat menemukan informasi tentang RPS</attr>
+            <attr name="action">INFORMASI RPS</attr>
+        </data>
+        <data name="q5">
+            <attr name="text">5. Bagaimana cara untuk melakukan pengisian KRS</attr>
+            <attr name="action">ISI KRS</attr>
+        </data>
+    </template>
+
+</category>
+
+<category>
+    <pattern>_SPTJM_</pattern>
+    <template>
+        Berikut langkah-langkah yang dapat anda lakukan untuk membuat Surat Pertanggungjawaban Magang
+        {{enter}}
+        1. Buat surat terlebih dahulu dengan format yang sudah ditentukan. Akses template pada link {{link}}https://fik.amikom.ac.id/page/pengajuan-surat{{/link}} 
+        {{enter}}
+        2. Lengkapi surat dengan Tanda tangan pembuat dan orang tua. Sertai dengan materai bernilai 10000.
+        {{enter}}
+        3. Lakukan legalisasi oleh Dekan Fakultas anda masing-masing. 
+    </template>
+</category>
+
+<category>
+    <pattern>_SURAT REKOMENDASI MAGANG_</pattern>
+    <template>
+        Berikut cara yang dapat anda lakukan untuk mendapatkan surat rekomendasi magang
+        {{enter}} 
+        1. Isi data master dulu pada link {{link}}https://docs.google.com/forms/d/e/1FAIpQLSdHDYp4EBXXG-TyzsmtZh9Q57oOMGZWve-i6lZASrclZbNg_A/closedform{{/link}} 
+        {{enter}}
+        2. Buat Proposal pengajuan dengan template yang ada pada link {{link}}https://docs.google.com/document/d/1ndB2xxw2QDyZF4SVAubf5zNAJCoOepWf/view{{/link}} 
+        {{enter}}
+        3. Isi form penyetaraan SKS magang dengan template yang ada pada link {{link}}https://d3ti.amikom.ac.id/page/magang-mbkm{{/link}}
+        {{enter}}
+        4. Ajukan approval terhadap dosen wali. Hubungi dosen wali secara pribadi.
+        {{enter}}
+        5. Ajukan approval terhadap kaprodi pada link {{link}}https://d3ti.amikom.ac.id/page/approval-kaprodi{{/link}} 
+        {{enter}}
+        6. Submit Proposal Pengajuan Magang pada link {{link}}https://linktr.ee/magangd3tiamikom{{/link}} 
+        {{enter}}
+        7. Isi data master pada link {{link}}https://docs.google.com/forms/d/e/1FAIpQLSdHDYp4EBXXG-TyzsmtZh9Q57oOMGZWve-i6lZASrclZbNg_A/closedform{{/link}}  dan pastikan data yang diisi harus sesuai.
+        {{enter}}
+        8. Kemudian anda bisa lakukan pengajuan Surat Rekomendasi Magang pada link {{link}}https://fik.amikom.ac.id/page/pengajuan-surat{{/link}} . Cek status pengajuan surat rekomendasi anda di website Fakultas pada menu Status Pengajuan Surat
+    </template>
+</category>
+<category>
+    <pattern>_D3 TI_</pattern>
+    <pattern>_D3 TEKNIK INFORMATIKA_</pattern>
+    <template>
+        <srai>_SURAT REKOMENDASI MAGANG_</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>_PINDAH KELAS_</pattern>
+    <template>
+        Berikut adalah langkah-langkah yang harus Anda lakukan untuk melakukan perpindahan kelas secara resmi dan jelas:
+        {{enter}} 
+        1. Akseslah halaman website Dashboard Mahasiswa.
+        {{enter}} 
+        2. Pilihlah opsi Menu Perkuliahan.
+        {{enter}} 
+        3. Temukan dan pilihlah fitur yang bernama Pindah Kelas.
+        {{enter}} 
+        4. Dalam fitur tersebut, pilihlah kelas mata kuliah yang ingin Anda pindahkan.
+        {{enter}} 
+        5. Ubahlah opsi keterangan kelas dengan memilih opsi kelas yang diinginkan.
+    </template>
+</category>
+
+<category>
+    <pattern>_STATUS PEMBAYARAN_</pattern>
+    <template>
+        Berikut adalah langkah-langkah yang harus Anda lakukan untuk dapat mengecek status pembayaran kuliah 
+        {{enter}} 
+        1. Akseslah halaman website Dashboard Mahasiswa.
+        {{enter}} 
+        2. Pilihlah opsi Menu Pembayaran.
+        {{enter}} 
+        3. Temukan dan pilihlah fitur yang bernama Info Biaya Kuliah.
+        {{enter}} 
+        4. Pada fitur tersebut, lengkapi dengan mengisi nama Bank yang digunakan, tahun ajaran kuliah yang ingin dicari, serta semester yang ditempuh.
+    </template>
+</category>
+
+<category>
+    <pattern>_INFORMASI RPS_</pattern>
+    <template>
+        Informasi RPS bisa anda dapatkan pada website masing-masing Prodi.Berikut list link website prodi dapat anda akses.
+        {{enter}} 
+        1. Akuntansi : {{link}}http://akuntansi.amikom.ac.id{{/link}}  
+        {{enter}} 
+        2. Arsitektur : {{link}}http://arsitektur.amikom.ac.id{{/link}}  
+        {{enter}} 
+        3. Geografi : {{link}}http://geografi.amikom.ac.id{{/link}}  
+        {{enter}} 
+        4. Ilmu Komunikasi : {{link}}http://ilmukomunikasi.amikom.ac.id{{/link}}  
+        {{enter}} 
+        5. Informatika : {{link}}http://informatika.amikom.ac.id{{/link}}  
+        {{enter}} 
+        6. Magister Teknik Informatika : {{link}}http://mti.amikom.ac.id{{/link}}  
+        {{enter}} 
+        7. Perencanaan Wilayah dan kota : {{link}}http://pwk.amikom.ac.id{{/link}}  
+        {{enter}} 
+        8. Teknik Informatika : {{link}}http://d3ti.amikom.ac.id{{/link}}  
+        {{enter}} 
+        9. Teknologi Informasi : {{link}}http://ti.amikom.ac.id{{/link}}  
+        {{enter}} 
+        10. Ekonomi : {{link}}http://ekonomi.amikom.ac.id{{/link}}  
+        {{enter}} 
+        11. Hubungan Internasional : {{link}}http://hi.amikom.ac.id{{/link}}  
+        {{enter}} 
+        12. Ilmu Pemerintahan : {{link}}http://ilmupemerintahan.amikom.ac.id{{/link}}  
+        {{enter}} 
+        13. Kewirausahaan : {{link}}http://kewirausahaan.amikom.ac.id{{/link}}  
+        {{enter}} 
+        14. Manajemen Informatika : {{link}}http://d3mi.amikom.ac.id{{/link}}  
+        {{enter}} 
+        15. Sistem Informasi : {{link}}http://si.amikom.ac.id{{/link}}  
+        {{enter}} 
+        16. Teknik Komputer : {{link}}http://tk.amikom.ac.id{{/link}} 
+    </template>
+</category>
+
+<category>
+    <pattern>_NILAI SEMESTER_</pattern>
+    <template>
+        Informasi Nilai Semester terdapat pada website Dashboard Mahasiswa. Berikut langkah-langkah yang dapat anda lakukan untuk menemukan informasi nilai semester 2 .
+        {{enter}} 
+        1. Akseslah halaman website Dashboard Mahasiswa.
+        {{enter}} 
+        2. Pilihlah opsi Menu Rencana dan Hasil Studi.
+        {{enter}} 
+        3. Temukan dan pilihlah fitur yang bernama Kartu Hasil Studi.
+        {{enter}} 
+        4. Pada fitur tersebut, isi keterangan semester dan tahun akademik yang dicari. Lalu tekan tombol tampilkan KHS.
+        {{enter}} 
+        5. Akan di tampilkan keterangan Kode Mata Kuliah, Mata Kuliah, Jumlah SKS, dan Nilai.
+    </template>
+</category>
+
+<category>
+    <pattern>_ISI KRS_</pattern>
+    <template>
+        Berikut langkah-langkah yag dapat anda lakukan untuk melakukan pengisian KRS. 
+        {{enter}} 
+        1. Lakukan Login akun di website mhs.amikom.ac.id 
+        {{enter}} 
+        2. Pilihlah opsi Menu Rencana dan Hasil Studi. Temukan dan pilihlah fitur yang bernama Rencana Studi (KRS).
+        {{enter}} 
+        3. Pilih opsi Pengambilan KRS. Pada fitur tersebut, tekan tombol DITAWARKAN. Pastikan anda sudah memasuki jadwal pengambilan KRS.
+        {{enter}} 
+        4. Terdapat list mata kuliah yang dapat diambil. Ceklis untuk memilih mata kuliah dan silang untuk menghapus pilihan matakuliah.
+        {{enter}} 
+        5. Jika ingin melakukan Cetak KRS, anda bisa melakukannya dengan memilih fitur Cetak KRS.
+    </template>
+</category>
+
+</aiml>
